@@ -18,4 +18,10 @@ class Passager extends Model
     {
         return $this->hasOne(Document::class);
     }
+
+    public function voyages()
+    {
+    return $this->hasMany(Voyage::class);
+    }
+
 }
